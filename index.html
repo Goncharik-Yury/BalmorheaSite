@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+
+<title>Balmorhea</title>
+<link rel="shortcut icon" href="images/icon.ico">
+
+
+</head>
+<body>
+
+<script src="js/jquery-2.1.1.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+
+<script>
+  $(function(){
+    $("[data-toggle=tooltip]").tooltip();
+  });
+</script>
+
+<script>
+function modalf(t)
+{
+  var src = t.getAttribute("src");
+  src=src.slice(0,-4);
+  src+="b.jpg";
+  console.log(src);
+  document.getElementById("img_switch").setAttribute("src",src);
+  
+
+}
+</script>
+
+<!-- Навигация -->
+<nav>
+  <div class="container-fluid nav_text">
+  <div class="row">
+    <ul>
+      <li style="background-color: #2c3e50;"><a href="index.html">Главная</a></li>
+      <li><a href="albums.html">Альбомы</a></li>
+      <li><a href="media.html">Медиа</a></li>
+      <li><a href="about_us.html">Про нас</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Картиночки сверху -->
+<header>
+  <div class="container">
+    <div class="row">
+    <!-- Логочка -->
+      <div class="hidden-xs col-sm-3">
+        <img  class="img-responsive balmorhea_label" src="images/bl.png">
+      </div>
+        <!-- Текстичек -->
+      <div class="col-xs-12 col-sm-9 head_bt">
+        <img style="z-index:-1;"class="img-responsive" src="images/bt.png">
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<article>
+<!-- Слайдерчик -->
+  <div id="slider_container" class="container container_padding_0">
+    <div id="carousel" class="carousel slide fluid">
+
+      <!-- Индикаторчики слайдиков -->
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Спайдики -->
+      <div id="slides_images" class="carousel-inner">
+        <div class="item active">
+          <span data-toggle="modal" data-target="#m1" class="thumbnail">
+            <img onclick="modalf(this)" src="images/slider/1.png"></span>
+          
+        </div>
+
+        <div class="item">
+          <span data-toggle="modal" data-target="#m1" class="thumbnail">
+            <img  onclick="modalf(this)" src="images/slider/2.png" alt=""></span>
+          
+        </div>
+
+        <div class="item">
+          <span data-toggle="modal" data-target="#m1" class="thumbnail">
+            <img  onclick="modalf(this)" src="images/slider/3.png" alt=""></span>
+          
+        </div>
+
+        <div class="item">
+          <span data-toggle="modal" data-target="#m1" class="thumbnail">
+            <img  onclick="modalf(this)" src="images/slider/4.png" alt=""></span>
+          
+        </div>
+      </div>
+      <!-- Конец спайдиков -->
+
+
+      <!-- Стрелки переключения слайдов -->
+    <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+  <!-- Конец слайдера -->
+<br>
+
+<div class="container back_dark">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10 regular_text_mp">
+    <br>
+      <h1 class="text-center">Всем привет</h1>
+      Мы коллектив <b><i>Balmorhea</i></b>. Мы рады видеть вас на нашем сайте. Нам приятно, что вы интересуетесь нашим творчеством. Мы считаем, что оно несёт людям свет и красоту. Каждый человек внутри прекрасен, просто не все это могут разглядеть в себе, или показать людям. Мы считаем, что наша музыка помогает раскрыть эту красоту в человеке. Инструментальная музыка, как нельзя лучше, способствует этому, как и классическое исполнение. Наслаждайтесь.
+
+      <!-- Фоточки участников груп почки -->
+      <br><br><br>
+      <div class="row img_inset">
+        <div class="col-xs-4 col-sm-2"><a href="about_us.html#tc"><img src="images/artists/Travis Chapman.png" class="img-responsive img-rounded"></a>
+        </div>
+        <div class="col-xs-4 col-sm-2"><a href="about_us.html#kk"><img src="images/artists/Kendall Clark.png"  class="img-responsive img-rounded"></a>
+        </div>
+        <div class="col-xs-4 col-sm-2"><a href="about_us.html#dr"><img src="images/artists/Dylan Rieck.png" = class="img-responsive img-rounded"></a>
+        </div>
+        <div class="container visible-xs"><br></div>
+        <div class="col-xs-4 col-sm-2"><a href="about_us.html#mm"><img src="images/artists/Michael Muller.png" class="img-responsive img-rounded"></a>
+        </div>
+        <div class="col-xs-4 col-sm-2"><a href="about_us.html#rl"><img src="images/artists/Rob Lowe.png" class="img-responsive img-rounded"></a>
+        </div>
+        <div class="col-xs-4 col-sm-2"><a href="about_us.html#ab"><img src="images/artists/Aisha Burns.png"  class="img-responsive img-rounded"></a>
+        </div>
+      </div>
+    </div>
+     <div class="row col-sm-4 text-left">
+     
+     </div>
+  </div>
+</div>
+</article>
+
+
+<br><br>
+<footer class="footer">
+  <!-- Иконочки социальненьких сетичек -->
+  <div class="text-center">
+    <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="найдите нас на facebook">
+      <a href="https://www.facebook.com/balmorhea"> <i class="fa fa-square fa-stack-2x fa-inverse"></i> <i class="fa fa-facebook fa-stack-1x"></i>
+      </a>
+    </span>
+    <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="найдите нас в twitter">
+      <a href="https://twitter.com/balmorheamusic">
+        <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-twitter fa-stack-1x "></i>
+      </a>
+    </span>
+    <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="найдите нас в instagram">
+      <a href="http://instagram.com/balmorheamusic">
+        <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-instagram fa-stack-1x "></i>
+      </a>
+    </span>
+  </div>
+</footer>
+
+<!-- Модальненькая кошечка -->
+  <div id="m1" class="modal fade bs-example-modal-lg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img id="img_switch" src="images/slider/1b.jpg" width="100%; ">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

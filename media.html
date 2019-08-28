@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+
+<title>Balmorhea</title>
+<link rel="shortcut icon" href="images/icon.ico">
+
+
+</head>
+<body>
+
+<script src="js/jquery-2.1.1.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/galery.js"></script>
+
+<script>
+function modalf(t)
+{
+  document.getElementById("img_switch").setAttribute("src",t.getAttribute("src"));
+}
+</script>
+
+<!-- Навигация -->
+<nav>
+  <div class="container-fluid nav_text">
+    <div class="row">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="albums.html">Альбомы</a></li>
+        <li style="background-color: #2c3e50;"><a href="media.html">Медиа</a></li>
+        <li><a href="about_us.html">Про нас</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Картиночки сверху -->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="hidden-xs col-sm-3">
+        <img  class="img-responsive balmorhea_label" src="images/bl.png"></div>
+      <div class="col-xs-12 col-sm-9 head_bt">
+        <img style="z-index:-1;"class="img-responsive" src="images/bt.png"></div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Основной контент -->
+<article>
+
+  <div class="container back_dark">
+    <div class="row section">Фотогалерея</div>
+    <div class="img_margin_bottom img_pointer">
+
+    <div class="col-sm-3">
+    <div data-toggle="modal" data-target="#m1" >
+      <img onclick="modalf(this)" class="img-responsive" src="images/Balmorhea/3.jpg">
+      </div>
+      <div data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)" class="img-responsive" src="images/Balmorhea/music_feature1-1.jpg">
+      </div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)" class="img-responsive" src="images/Balmorhea/2.jpg">
+      </div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)" class="img-responsive" src="images/Balmorhea/0.jpg">
+      </div>
+      </div>
+    <div class="col-sm-3">
+    <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)" class="img-responsive" src="images/Balmorhea/BALMORHEA1.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" class="pointer    ">
+      <img onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/4.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)" class="img-responsive" src="images/Balmorhea/3260.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/m2.jpg"></div></div>
+    <div class="col-sm-3">
+    <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/420406_10150613394904022_32316089021_9100284_637197957_n.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/BALM.KDY_.1.500.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/balmorhea (2).jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/15-questions-to-balmorhea-2007-09-16.6190851132.jpg"></div></div>
+    <div class="col-sm-3">
+    <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/side1_700.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/uKHVtqfCafc.jpg"></div>
+      <div  data-toggle="modal" data-target="#m1" >
+      <img  onclick="modalf(this)"  class="img-responsive" src="images/Balmorhea/Balmorhea2011.jpg"><br></div>
+    </div>
+
+  </div>
+</div>
+  <br><br>
+  <!-- Блок с видео -->
+  <div class="container back_dark">
+    <div class="row section">Видеозаписи</div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 video">
+        <video controls="controls" width="100%">
+          <source src="video/The Winter.mp4"/>
+        </video>
+      </div>
+      <div class="col-xs-12 col-sm-6 video">
+        <video controls="controls">
+          <source src="video/Bowsprit.mp4"/>
+        </video>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col-xs-12 col-sm-6 video">
+        <video controls="controls">
+          <source src="video/Baleen Morning.mp4"/>
+        </video>
+      </div>
+      <div class="col-xs-12 col-sm-6 video">
+        <video controls="controls">
+          <source src="video/If Only You Knew The Rain.mp4"/>
+        </video>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col-xs-12 col-sm-6 video">
+        <video controls="controls">
+          <source src="video/Remembrance.mp4"/>
+        </video>
+      </div>
+      <div class="col-xs-12 col-sm-6 video">
+        <video controls="controls">
+          <source src="video/Harm and Boon.mp4"/>
+        </video>
+      </div>
+    </div>
+  </div>
+
+</article>
+
+
+<br><br>
+<footer class="footer">
+  <!-- Иконочки социальненьких сетичек -->
+  <div class="text-center">
+    <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="найдите нас на facebook">
+      <a href="https://www.facebook.com/balmorhea"> <i class="fa fa-square fa-stack-2x fa-inverse"></i> <i class="fa fa-facebook fa-stack-1x"></i>
+      </a>
+    </span>
+    <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="найдите нас в twitter">
+      <a href="https://twitter.com/balmorheamusic">
+        <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-twitter fa-stack-1x "></i>
+      </a>
+    </span>
+    <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="найдите нас в instagram">
+      <a href="http://instagram.com/balmorheamusic">
+        <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-instagram fa-stack-1x "></i>
+      </a>
+    </span>
+  </div>
+</footer>
+
+<!-- Модалки -->
+
+<div id="m1" class="modal fade bs-example-modal-lg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img id="img_switch" width="100%; ">
+      </div>
+    </div>
+  </div>
+
+<!-- КОНЕЦ Модалки -->
+
+</body>
+</html>

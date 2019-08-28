@@ -1,0 +1,242 @@
+body
+{
+  background-image: url("../images/bg.png");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  word-wrap: break-word;
+  font-family: sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+
+}
+
+body {
+  margin-bottom: 40px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+nav
+{
+  margin-bottom: 0;
+  font-size: 20px;
+  background-color: #34495e;
+  margin: auto;
+  padding-bottom: 16px;
+}
+
+
+nav ul
+{
+  display: inline-block;
+  margin: auto;
+  height: 40px;
+  
+  line-height: 50px;
+}
+
+nav ul>li
+{
+  color: #fff;
+  display: inline;
+  padding:18px;
+  /*padding:12px;*/
+}
+
+nav ul>li:hover
+{
+  color: #ccc;
+
+  background-color: #2c3e50;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_text {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav_text {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+
+/* Стиль ссылок */
+a, a:hover
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Разме слайдера */
+#slider_container
+{
+  max-width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+/* Изображения слайдера */
+#slides_images img
+{
+  width: 100%;
+}
+
+/* Фон индикаторов слайда слайдера */
+.carousel-indicators
+{
+  background: rgba(0,0,0,0.5);
+}
+
+/* Картинки в альбомах */
+.albums img
+{
+  border: 1px solid rgba(3,3,3,0.1);
+}
+
+/* Футер */
+.footer
+{
+  background-color: #34495e;
+  color: #2c3e50;
+  padding: 4px;
+}
+
+.footer a
+{
+  color: #2c3e50;
+}
+
+/* Секции (альбомы ...) */
+.section
+{
+  background-color: #34495e;
+  color: #fff;
+  padding: 12px;
+  padding-left: 18px;
+  font-size: 36px;
+  margin-bottom: 30px;
+
+}
+
+.balmorhea_label
+{
+  position: absolute;
+  z-index:-1;
+  max-height: 200px;
+}
+
+header
+{
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.back_dark
+{
+  background: rgba(0,0,0,0.6);
+  padding-bottom: 12px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video video {
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 90%;
+    height: 90%;
+}
+
+span.thumbnail
+{
+  cursor: pointer;
+}
+
+.img_pointer img
+{
+  cursor: pointer;
+}
+
+.group_name img
+{
+  max-width: 400px;
+}
+
+.header
+{
+  width: 100%;
+}
+
+.head_bt
+{
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .regular_text {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  .regular_text {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .regular_text_mp {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  .regular_text_mp {
+    font-size: 2.2rem;
+    text-align: justify;
+  }
+}
+
+.img_inset img:hover
+{
+  border:inset 1px rgba(3,3,3,0.2);
+}
+
+.artist_name
+{
+  font-size: 36px;
+  margin-left: 14px;
+}
+
+.img_margin_bottom img
+{
+  margin-bottom: 16px;
+}
+
+.container_padding_0
+{
+  padding: 0;
+}
+
+.thumbnail
+{
+  padding: 0;
+  border:0;
+}
